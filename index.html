@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Search</title>
+</head>
+<body>
+  <script src="main.js"></script>
+  <script>
+    const scores = [30, 40, 50, 70, 85, 90, 100];
+
+    const searchValue = [];
+    const position = [];
+    searchValue[0] = 40;
+    position[0] = BinarySearch.search(scores, searchValue);
+    document.write(`${searchValue} position: ${position[0]}`);
+
+    document.write(`</br> ---------------------------- </br>`);
+
+    searchValue[0] = 90;
+    position[0] = BinarySearch.search(scores, searchValue);
+    document.write(`${searchValue} position: ${position[0]}`);
+
+    document.write(`</br> ---------------------------- </br>`);
+
+    searchValue[0] = 80;
+    position[0] = BinarySearch.search(scores, searchValue);
+    document.write(`${searchValue} position: ${position[0]}`);
+
+  </script>
+</body>
+</html>
